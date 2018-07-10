@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Practice</title>
+	</head>
+	
+	<body>
+		<script>
+		function Person (name, city, country, age)
+		{
+			this.Name = name;
+			this.City = city;
+			this.Country = country;
+			this.Age = age;
+		}
+		
+		function helloWorld ()
+		{
+			document.write("Hello World");
+		}
+		
+		var Person1 = new Person ("Reece", "Maidstone", "England", 25);
+		
+		for(var prop in Person1)
+		{
+			var propName = Person1[prop];
+			
+			if(Person1.hasOwnProperty(prop))
+			{
+				document.write(prop, ": ", this.propName, "<br/>");
+			}
+		}
+
+		</script>
+	</body>
+</html>
